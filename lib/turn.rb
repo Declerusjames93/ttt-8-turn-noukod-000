@@ -29,9 +29,8 @@ board[index]=value
   if valid_move?(board,index)
     puts "valid move"
 
-    move(board, index, value)
+  #move(board, index, value)
     display_board(board)
-
    else
     puts "try again"
     turn(board)
