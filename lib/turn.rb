@@ -31,7 +31,6 @@ def turn(board)
    else
     turn(board)
   end
-
 end
 
 #CHECK FOR EMPTY SPACE
@@ -55,6 +54,6 @@ def valid_move?(board, index)
 
 def move(board, index, value="X")
   board[index] = value
-  board[index] = " "
+
 
 end
