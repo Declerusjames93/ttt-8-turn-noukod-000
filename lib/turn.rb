@@ -1,6 +1,6 @@
 
 #function display_board
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 def display_board(board)
 
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -12,8 +12,9 @@ def display_board(board)
 end
 
 #conver string to integer
-def input_to_index(move)
-   index = move.to_i - 1
+user_input="1"
+def input_to_index(user_input)
+   return user_input.to_i - 1
 end
 
 #function turn
@@ -40,12 +41,16 @@ end
 
 #CHECK FOR EMPTY SPACE
 def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
+  !
+  if board[index]=="X" || board[index] == "O"
+    return true
+  else board[index]==" " || board[index] == " "|| board[index]==nil
+    return false
+  end
 end
 
 #IS # CORRECT & SPACE EMPTY?
-def valid_move?(board, input_to_index)
-	index = input_to_index.to_i - 1
+def valid_move?(board,index)
 	if (!position_taken?(board, index) && index.between?(0,8))
 		return true
 
@@ -56,20 +61,7 @@ def valid_move?(board, input_to_index)
 
  end
 
-#COUNT
-def turn_count(board)
-  counter = 0
-  board.each do |space|
-    if space == "X" || space == "O"
-      counter +=1
-  end
-end
-return counter
-end
 
-
-
-#MAKE MOVE ON BOARD
 def move(board, index, value)
   board[index] = value
 end
