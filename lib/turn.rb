@@ -15,7 +15,7 @@ def input_to_index(move)
    index
 end
 
-#MAKE TURN
+#function turn
 def turn(board)
   puts "Please enter 1-9:"
   #get the user input
