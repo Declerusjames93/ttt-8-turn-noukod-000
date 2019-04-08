@@ -27,7 +27,7 @@ def turn(board)
   #check for validation
   if valid_move?(board,index)
   move(board, index)
- display_board(board)
+display_board(board)
    else
     turn(board)
   end
