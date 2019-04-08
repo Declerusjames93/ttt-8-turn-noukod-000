@@ -30,7 +30,7 @@ board[index]=value
     puts "valid move"
 
   #move(board, index, value)
-    display_board(board)
+    return display_board(board)
    else
     puts "try again"
     turn(board)
