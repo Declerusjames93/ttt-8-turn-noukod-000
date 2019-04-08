@@ -30,7 +30,7 @@ def turn(board)
     move(board, index, token)
     display_board(board)
    else
-    puts 'try again'
+    puts "try again"
     turn(board)
   end
   display_board(board)
