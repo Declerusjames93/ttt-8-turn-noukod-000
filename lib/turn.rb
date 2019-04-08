@@ -64,5 +64,7 @@ def valid_move?(board,index)
 
 def move(board, index, value)
   board[index] = value
+  board[index] = " "
+  
 end
 #add missing code here
