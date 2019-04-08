@@ -45,15 +45,17 @@ def position_taken?(board, index)
 end
 
 #IS # CORRECT & SPACE EMPTY?
-def valid_move?(board, index)
+def valid_move?(board, input_to_index)
+	index = input_to_index.to_i - 1
+	if !position_taken?(board, index) && index.between?(0,8)
+		true
 
-  if index.between?(0,8) && !position_taken?(board, index)
-      puts "this is a valid move"
-    return true
-  else
-   return false
-  end
-end
+ 	else
+		false
+
+ 	end
+
+ end
 
 #COUNT
 def turn_count(board)
