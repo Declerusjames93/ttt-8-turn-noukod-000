@@ -21,14 +21,3 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-final_position = number_entered()
-
-#else ask for input again until you get valid input
-#_________________________________________________
-
-#if index is valid
-if valid_move?(number_entered, board)
-#   - make the move for index
-  move(board, number_entered)
-#   - show the board
-  display_board(board)
