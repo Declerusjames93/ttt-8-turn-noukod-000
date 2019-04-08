@@ -29,9 +29,10 @@ def turn(board)
   #check for validation
   if valid_move?(board,index)
     puts "valid move"
+      board[index]=value
     move(board, index, value)
     display_board(board)
-    board[index]=value
+  
    else
     puts "try again"
     turn(board)
