@@ -22,7 +22,7 @@ def turn(board)
   user_input = gets.strip
   #input to index
   index = input_to_index(user_input)
-  
+
 
   #check for validation
   if valid_move?(board,index)
