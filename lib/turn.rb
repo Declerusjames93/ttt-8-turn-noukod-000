@@ -25,7 +25,7 @@ def turn(board)
   #input to index
   index = input_to_index(user_input)
   #check for validation
-  if valid_move?(board,index)
+  if valid_move?(board, index)
   move(board, index)
   display_board(board)
    else
@@ -44,8 +44,8 @@ def position_taken?(board, index)
 end
 
 #IS # CORRECT & SPACE EMPTY?
-def valid_move?(board,index)
-	if !position_taken?(board, index) && index.between?(0,8)
+def valid_move?(board, index)
+	if !position_taken?(board, index) && index.between?(0, 8)
 		return true
  	else
 		return false
