@@ -29,6 +29,6 @@ final_position = number_entered()
 #if index is valid
 if valid_move?(number_entered, board)
 #   - make the move for index
-  move(ttt_board, number_entered) 
+  move(ttt_board, number_entered)
 #   - show the board
   display_board(ttt_board)
