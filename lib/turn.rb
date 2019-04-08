@@ -32,7 +32,7 @@ def turn(board)
       board[index]=value
     move(board, index, value)
     display_board(board)
-  
+
    else
     puts "try again"
     turn(board)
