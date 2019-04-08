@@ -47,10 +47,10 @@ end
 def valid_move?(board, input_to_index)
 	index = input_to_index.to_i - 1
 	if (!position_taken?(board, index) && index.between?(0,8))
-		true
+		return true
 
  	else
-		false
+		return false
 
  	end
 
