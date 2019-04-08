@@ -66,4 +66,3 @@ def move(board, index, value="X")
   board[index] = " "
 
 end
-#add missing code here
