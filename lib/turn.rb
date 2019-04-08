@@ -45,7 +45,7 @@ end
 def valid_move?(board, index)
 
   if index.between?(0,8) && !position_taken?(board, index)
-      puts 'this is a valid move'
+      puts "this is a valid move"
     return true
   else
    return false
@@ -63,15 +63,6 @@ end
 return counter
 end
 
-#WHICH PLAYER IS THIS?
-def current_player(board)
-  if turn_count(board)%2 ==0
-    current_player = "X"
-  else
-    current_player = "O"
-end
-return current_player
-end
 
 
 #MAKE MOVE ON BOARD
