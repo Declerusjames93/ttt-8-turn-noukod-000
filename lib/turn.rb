@@ -25,18 +25,17 @@ def turn(board)
   #input to index
   index = input_to_index(user_input)
 
-board[index]=value
+
   #check for validation
   if valid_move?(board,index)
-    puts "valid move"
-
-  move(board, index, value)
-    return display_board(board)
+  
+  move(board, index)
+ display_board(board)
    else
-    puts "try again"
+  
     turn(board)
   end
-return display_board(board)
+
 end
 
 #CHECK FOR EMPTY SPACE
@@ -62,7 +61,7 @@ def valid_move?(board,index)
  end
 
 
-def move(board, index, value)
+def move(board, index, value="X")
   board[index] = value
   board[index] = " "
 
