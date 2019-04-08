@@ -10,7 +10,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 
 end
-  
+
 #conver string to integer
 def input_to_index(move)
    index = move.to_i - 1
