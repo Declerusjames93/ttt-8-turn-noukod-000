@@ -10,11 +10,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 
 end
-  board[index]=value
+  
 #conver string to integer
 def input_to_index(move)
    index = move.to_i - 1
-   index
 end
 
 #function turn
@@ -25,7 +24,7 @@ def turn(board)
   #input to index
   index = input_to_index(user_input)
 
-
+board[index]=value
   #check for validation
   if valid_move?(board,index)
     puts "valid move"
