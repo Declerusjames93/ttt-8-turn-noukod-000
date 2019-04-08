@@ -1,12 +1,12 @@
 
 #function display_board
 #if index is valid...
-def valid_move?(number_entered, board)
-  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
+def valid_move?(n_user_input , board)
+  n_user_input .between?(0, 8) && !(position_taken?(board, n_user_input ))
 end
 #if index is valid...make the move for index
-def move(array, index, name = "X")
-  array[index] = name
+def move(board, index, value = "X")
+  board[index] = value
 end
 #if index is valid...show the board
 def position_taken?(board, index)
