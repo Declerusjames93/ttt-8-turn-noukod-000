@@ -5,8 +5,8 @@ def valid_move?(number_entered, board)
   number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
 #if index is valid...make the move for index
-def move(board, index, value = "X")
-  board[index] = value
+def move(array, index, name = "X")
+  array[index] = name
 end
 #if index is valid...show the board
 def position_taken?(board, index)
@@ -29,7 +29,6 @@ final_position = number_entered()
 #if index is valid
 if valid_move?(number_entered, board)
 #   - make the move for index
-  move(board, number_entered)
+  move(ttt_board, number_entered) 
 #   - show the board
   display_board(ttt_board)
-#else ask tor input again unti
