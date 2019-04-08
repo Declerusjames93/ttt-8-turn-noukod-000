@@ -35,7 +35,7 @@ board[index]=value
     puts "try again"
     turn(board)
   end
-  display_board(board)
+return display_board(board)
 end
 
 #CHECK FOR EMPTY SPACE
