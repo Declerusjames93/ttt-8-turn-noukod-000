@@ -3,5 +3,12 @@ require_relative '../lib/turn'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
+
+#asks for input
+puts "Enter a position on the board 1-9:"
+#get input
+user_input = gets.chomp
+#convert input to index
+number_entered = user_input.to_i - 1
 display_board(board)
 turn(board)
