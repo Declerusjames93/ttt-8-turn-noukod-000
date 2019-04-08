@@ -26,7 +26,7 @@ def turn(board)
 
   #check for validation
   if valid_move?(board,index)
-    puts 'valid move'
+    puts "valid move"
     move(board, index, value)
     display_board(board)
    else
@@ -52,7 +52,7 @@ def valid_move?(board, index)
   end
 end
 
-#COUNTER FOR PLAYER ASSESMENT
+#COUNT
 def turn_count(board)
   counter = 0
   board.each do |space|
